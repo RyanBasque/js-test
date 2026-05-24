@@ -111,9 +111,9 @@ export default function AppLayout() {
         />
       )}
 
-      {/* Sidebar - mobile slide-over */}
+      {/* Sidebar - mobile slide-over / desktop sticky */}
       <aside
-        className={`fixed inset-y-0 left-0 z-50 w-64 bg-gray-900 flex flex-col transform transition-transform duration-300 ease-in-out lg:static lg:translate-x-0 lg:shrink-0 ${
+        className={`fixed inset-y-0 left-0 z-50 w-64 bg-gray-900 flex flex-col transform transition-transform duration-300 ease-in-out lg:sticky lg:top-0 lg:h-screen lg:translate-x-0 lg:shrink-0 ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
